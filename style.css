@@ -47,6 +47,238 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+  margin-top:10%;
+  background-color: var(--clr-paleBlue);
+  font-family: var(--fs-base);
+  font-weight: var(--fw-regular);  
+}
+
+.res_sum_comp {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--clr-white);
+  border-radius: 2rem ; 
+  max-width: 800px;
+}
+
+.result-section{ 
+  background: linear-gradient(var(--gra-lightSlateBlue),var(--gra-lightRoyalBlue)) ;
+  text-align: center;
+  border-radius: 2rem;  
+}
+
+.resultdetails{
+  padding:40px;
+  margin:10px;
+  color: var(--clr-lightLavender); 
+  
+  }
+
+.resultdetails .para1{
+  font-weight: var(--fw-bold);
+  font-size:x-large;
+}
+.scoredetails{
+  height:200px;
+  width:200px;
+  background:linear-gradient(var(--gra-violetBlue),var(--gra-persianBlue));
+  margin:20px auto;
+  border-radius: 100%;
+  padding:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center;
+  justify-content: center;
+
+  color:var(--clr-white);
+  font-weight:var(--fw-bold); 
+}
+
+.scoredetails h1{
+  font-size: 80px;
+}
+
+.scoredetails .resultscoreof {
+ 
+  color: var(--clr-lightLavender);
+  font-weight: 300px;
+  margin-top: 0.01rem;
+
+}
+
+.resultdetails .para3{
+  font-size:xx-large;
+  color:var(--clr-white);
+  font-weight: var(--fw-bold);
+  letter-spacing: 1px;
+  margin-bottom: 0.05rem;
+  
+}
+
+.resultdetails .para4 {
+  padding: 4px;
+  margin: 15px;
+  font-size: large;
+}
+
+.summary-section{ 
+  padding: 25px; 
+  margin: 10px;   
+}
+
+.para5 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-black); 
+  color:var(--clr-darkGrayBlue)   
+}
+
+
+img{
+  height: 20px;
+}
+.reac-details{
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  margin-top:30px;
+  margin-bottom: 20px;
+  background-color: hsl(0, 100%, 67%,0.05);
+  justify-content: space-between;  
+  border-radius: 0.75rem;
+  height:60px;
+  font-size: large;
+}
+
+.reac-details .reac{
+  display: flex;
+  gap:10px;
+  color: var(--clr-lightRed);
+  font-weight: 400px;  
+  align-items: center;
+}
+
+.mem-details{
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  margin-top:10px;
+  margin-bottom: 20px;
+  background-color:hsla(39, 100%, 56%,0.05);
+  justify-content: space-between;  
+  border-radius: 0.75rem;
+  height: 60px;
+  font-size: large;
+}
+
+.mem-details .mem{
+  display: flex;
+  gap:10px;
+  color: var(--clr-orangeYellow);
+  font-weight: 400px;
+  font-size: large;
+  align-items: center;
+}
+
+.verb-details{
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  margin-top:10px;
+  margin-bottom: 20px;
+  background-color:hsla(166, 100%, 37%,0.05);
+  justify-content: space-between;  
+  border-radius: 0.75rem;
+  height:60px;
+  font-size: large;
+}
+
+.verb-details .verb{
+  display: flex;
+  gap:10px;
+  color: var(--clr-greenTeal);
+  font-weight: 400px;
+  font-size: large;
+  align-items: center;
+}
+
+.visual-details{
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  margin-top:10px;
+  margin-bottom: 20px;
+  background-color: hsl(234, 85%, 45%, 0.05);
+  justify-content: space-between;  
+  border-radius: 0.75rem;
+  height:60px;
+  font-size: large;
+}
+
+.visual-details .visual{
+  display: flex;
+  gap:10px;
+  color: var(--clr-cobaltBlue);
+  font-weight: 400px;
+  font-size: large;
+  align-items: center;
+}
+
+span{
+  font-weight: var(--fw-black);
+  color: var(--clr-darkGrayBlue);
+  margin-right: 10px;
+  margin-top: 50px;
+  
+}
+
+.percent{
+  color:gray; 
+}
+
+.cont {
+   background-color: var(--clr-darkGrayBlue);
+   text-align: center;
+   justify-content:center;
+   color:  var(--clr-white);
+   padding: 1rem;
+   border-radius: 2rem;
+   margin-top:50px;
+   margin-bottom: 50px;
+   height: 70px;
+  font-size: 20px;  
+
+}
+
+@media (max-width: 600px) {
+  .result-section{
+    width:100%;
+    padding:0px;
+    border-radius:0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+  }
+
+  .summary-section{
+    padding:0;
+    width:80%;
+    margin: 0 auto;    
+  }
+
+  .res_sum_comp{
+    display: grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    border-radius:0px;
+    }
+}
+
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
